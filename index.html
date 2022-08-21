@@ -45,11 +45,16 @@
               <div class="card bg-dark text-light shadow">
                 <img src="images/cr7.png" class="card-img-top" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">Cristiano Ronaldo</h5>
+                  <h5 id="cr7-name" class="card-title text-center">
+                    Cristiano Ronaldo
+                  </h5>
                   <p class="card-text text-center">
                     The best Energetic player. And the best shot ever.
                   </p>
-                  <button class="btn btn-primary w-100 fs-5 f-bold">
+                  <button
+                    id="cr7-btn"
+                    class="btn btn-primary w-100 fs-5 f-bold"
+                  >
                     Select
                   </button>
                 </div>
@@ -60,11 +65,16 @@
               <div class="card bg-dark text-light">
                 <img src="images/messi.png" class="card-img-top" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">lionel Messi</h5>
+                  <h5 id="messi-name" class="card-title text-center">
+                    lionel Messi
+                  </h5>
                   <p class="card-text text-center">
                     The best forward. And the best dribbler ever.
                   </p>
-                  <button class="btn btn-primary w-100 fs-5 f-bold">
+                  <button
+                    id="messi-btn"
+                    class="btn btn-primary w-100 fs-5 f-bold"
+                  >
                     Select
                   </button>
                 </div>
@@ -76,11 +86,16 @@
               <div class="card bg-dark text-light">
                 <img src="images/Neymar.png" class="card-img-top" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">Neymar Jr.</h5>
+                  <h5 id="nymer-name" class="card-title text-center">
+                    Neymar Jr.
+                  </h5>
                   <p class="card-text text-center">
                     The best Stylish player. And a good dribbler too.
                   </p>
-                  <button class="btn btn-primary w-100 fs-5 f-bold">
+                  <button
+                    id="nymer-btn"
+                    class="btn btn-primary w-100 fs-5 f-bold"
+                  >
                     Select
                   </button>
                 </div>
@@ -92,11 +107,16 @@
               <div class="card bg-dark text-light">
                 <img src="images/Mohamed_Salah.png" class="card-img-top" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">Mohammad Salah</h5>
+                  <h5 id="salah-name" class="card-title text-center">
+                    Mohammad Salah
+                  </h5>
                   <p class="card-text text-center">
                     The best Honest player. And a good goal scorer too.
                   </p>
-                  <button class="btn btn-primary w-100 fs-5 f-bold">
+                  <button
+                    id="salah-btn"
+                    class="btn btn-primary w-100 fs-5 f-bold"
+                  >
                     Select
                   </button>
                 </div>
@@ -108,11 +128,16 @@
               <div class="card bg-dark text-light">
                 <img src="images/Mbappe.png" class="card-img-top" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">Mbappe</h5>
+                  <h5 id="mbappe-name" class="card-title text-center">
+                    Mbappe
+                  </h5>
                   <p class="card-text text-center">
                     One of the most Funny player. And one of the best scorer.
                   </p>
-                  <button class="btn btn-primary w-100 fs-5 f-bold">
+                  <button
+                    id="mbappe-btn"
+                    class="btn btn-primary w-100 fs-5 f-bold"
+                  >
                     Select
                   </button>
                 </div>
@@ -124,11 +149,16 @@
               <div class="card bg-dark text-light">
                 <img src="images/Lewandowski.png" class="card-img-top" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">Lewandowski</h5>
+                  <h5 id="lewandowski-name" class="card-title text-center">
+                    Lewandowski
+                  </h5>
                   <p class="card-text text-center">
                     The best charming player. And one of the best scorer.
                   </p>
-                  <button class="btn btn-primary w-100 fs-5 f-bold">
+                  <button
+                    id="lewandowski-btn"
+                    class="btn btn-primary w-100 fs-5 f-bold"
+                  >
                     Select
                   </button>
                 </div>
@@ -141,14 +171,10 @@
         <aside class="col-md-3 mt-5 mt-md-0">
           <!-------- Chosen Player List --------->
           <div class="chosen-player card bg-dark text-light">
-            <h2 class="text-center py-5"><u>Chosen Player</u></h2>
-            <ol>
-              <li class="py-2 ps-3 fs-5">Cristiano Ronaldo</li>
-              <li class="py-2 ps-3 fs-5">Lionel Messi</li>
-              <li class="py-2 ps-3 fs-5">Mohammad Salah</li>
-              <li class="py-2 ps-3 fs-5">Mbappe</li>
-              <li class="py-2 ps-3 fs-5">Lewandowski</li>
-            </ol>
+            <h2 id="player-plate" class="text-center py-5">
+              <u>Chosen Player</u>
+            </h2>
+            <ol id="player-list" class="fs-5 ms-3 pb-4"></ol>
           </div>
 
           <!-------- Budget Calculation --------->
@@ -162,7 +188,7 @@
                 type="number"
               />
             </div>
-            <button class="btn btn-primary w-100 fs-5 f-bold my-3">
+            <button class="btn btn-primary w-75 m-auto fs-5 f-bold my-3">
               Calculate
             </button>
 
@@ -183,7 +209,7 @@
                 type="number"
               />
             </div>
-            <button class="btn btn-primary w-100 fs-5 f-bold my-3">
+            <button class="btn btn-primary w-75 m-auto fs-5 f-bold my-3">
               Calculate
             </button>
           </div>
