@@ -11,6 +11,7 @@ function getArrLength(){
     document.getElementById('player-plate').innerText = emptyArr.length;
     if(emptyArr.length > 5){
         alert('You are not able to get more than 5 playes');
+        return setAttribute('disabled', true);
     }
 }
 
