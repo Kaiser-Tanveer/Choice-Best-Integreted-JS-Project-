@@ -9,9 +9,9 @@ function getNames(elementId){
 let emptyArr = [];
 function getArrLength(){
     document.getElementById('player-plate').innerText = emptyArr.length;
-    // if(emptyArr.length > 5){
-    //     alert('You are not able to get more than 5 playes');
-    // }
+    if(emptyArr.length > 5){
+        alert('You are not able to get more than 5 playes');
+    }
 }
 
 // Card-1 Event Listener
