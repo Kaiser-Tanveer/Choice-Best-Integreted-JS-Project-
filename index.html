@@ -196,10 +196,17 @@
               Calculate
             </button>
 
-            <h4 class="text-center">Player Expense <span>$5000</span></h4>
+            <h4 class="text-center">
+              Player Expense: $<span
+                id="player-cost-container"
+                class="text-warning"
+                >5000</span
+              >
+            </h4>
             <div class="ps-3 ms-auto pe-3">
               <span>Manager</span>
               <input
+                id="manager-cost"
                 class="d-inline my-2 text-center"
                 value="2000"
                 type="number"
@@ -208,14 +215,23 @@
             <div class="ps-3 ms-auto pe-3">
               <span>Coach</span>
               <input
+                id="coach-cost"
                 class="d-inline my-2 text-center"
                 value="4000"
                 type="number"
               />
             </div>
-            <button class="btn btn-primary w-75 m-auto fs-5 f-bold my-3">
+            <button
+              id="total-cost"
+              class="btn btn-primary w-75 m-auto fs-5 f-bold my-3"
+            >
               Calculate
             </button>
+            <h4 class="text-center">
+              Total: $<span id="player-cost-container" class="text-warning"
+                >5000</span
+              >
+            </h4>
           </div>
         </aside>
       </section>
