@@ -15,10 +15,13 @@ document.getElementById('per-calculate').addEventListener('click', function(){
     
 })
 
-document.getElementById('total-cost').addEventListener('click', function(){
+document.getElementById('total-cost-btn').addEventListener('click', function(){
     const managerCost = getInputValue('manager-cost');
     const coachCost = getInputValue('coach-cost');
-    console.log(managerCost, coachCost);
+    const perPlayerInput = getInputValue('per-player-input');
+    const playerCost = perPlayerInput * emptyArr.length;
+
+    document.getElementById('total-cost').innerText = playerCost + managerCost + coachCost;
 })
 
 
