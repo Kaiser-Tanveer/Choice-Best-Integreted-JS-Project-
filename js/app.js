@@ -5,24 +5,31 @@ function getNames(elementId){
     return nameFieldStr;
 }
 
-
-
-
+// EmptyArray for calculate added players
+let emptyArr = [];
+function getArrLength(){
+    document.getElementById('player-plate').innerText = emptyArr.length;
+}
 
 // Card-1 Event Listener
     const cr7Btn = document.getElementById('cr7-btn');
     cr7Btn.addEventListener('click', function(){
     const name = getNames('cr7-name');
+    emptyArr.push(name);
+    getArrLength()
     const li = document.createElement('li');
     li.innerText = name;
     const playerList = document.getElementById('player-list');
     playerList.appendChild(li);
     cr7Btn.setAttribute('disabled', true);
+    
 });
 // Card-2 Event Listener
     const messiBtn = document.getElementById('messi-btn');
     messiBtn.addEventListener('click', function(){
     const name = getNames('messi-name');
+    emptyArr.push(name);
+    getArrLength()
     const li = document.createElement('li');
     li.innerText = name;
     const playerList = document.getElementById('player-list');
@@ -33,6 +40,8 @@ function getNames(elementId){
     const nymarBtn = document.getElementById('nymer-btn');
     nymarBtn.addEventListener('click', function(){
     const name = getNames('nymer-name');
+    emptyArr.push(name);
+    getArrLength()
     const li = document.createElement('li');
     li.innerText = name;
     const playerList = document.getElementById('player-list');
@@ -43,6 +52,8 @@ function getNames(elementId){
     const salahBtn = document.getElementById('salah-btn')
     salahBtn.addEventListener('click', function(){
     const name = getNames('salah-name');
+    emptyArr.push(name);
+    getArrLength()
     const li = document.createElement('li');
     li.innerText = name;
     const playerList = document.getElementById('player-list');
@@ -53,6 +64,8 @@ function getNames(elementId){
     const mbappeBtn = document.getElementById('mbappe-btn')
     mbappeBtn.addEventListener('click', function(){
     const name = getNames('mbappe-name');
+    emptyArr.push(name);
+    getArrLength()
     const li = document.createElement('li');
     li.innerText = name;
     const playerList = document.getElementById('player-list');
@@ -63,6 +76,8 @@ function getNames(elementId){
     const lewandowskiBtn = document.getElementById('lewandowski-btn');
     lewandowskiBtn.addEventListener('click', function(){
     const name = getNames('lewandowski-name');
+    emptyArr.push(name);
+    getArrLength()
     const li = document.createElement('li');
     li.innerText = name;
     const playerList = document.getElementById('player-list');
@@ -71,6 +86,3 @@ function getNames(elementId){
 })
 
 
-// Calculation Section 
-// const playerPlate = document.getElementById('player-plate');
-// console.log(playerPlate.length)

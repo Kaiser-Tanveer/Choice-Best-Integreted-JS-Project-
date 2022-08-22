@@ -171,8 +171,8 @@
         <aside class="col-md-3 mt-5 mt-md-0">
           <!-------- Chosen Player List --------->
           <div class="chosen-player card bg-dark text-light">
-            <h2 id="player-plate" class="text-center py-5">
-              <u>Chosen Player</u>
+            <h2 class="text-center py-5">
+              <u>Chosen Player: </u><span id="player-plate">00</span>
             </h2>
             <ol id="player-list" class="fs-5 ms-3 pb-4"></ol>
           </div>
@@ -181,14 +181,18 @@
           <div class="card bg-dark text-light mt-4">
             <h2 class="text-center py-5"><u>Budget</u></h2>
             <div class="ms-auto pe-3">
-              <span>Per player</span>
+              <span>Per Player</span>
               <input
+                id="per-player-input"
                 class="d-inline my-2 text-center"
-                value="1000"
                 type="number"
+                value="1000"
               />
             </div>
-            <button class="btn btn-primary w-75 m-auto fs-5 f-bold my-3">
+            <button
+              id="per-calculate"
+              class="btn btn-primary w-75 m-auto fs-5 f-bold my-3"
+            >
               Calculate
             </button>
 
@@ -223,5 +227,6 @@
     </footer>
     <!-- Script -->
     <script src="js/app.js"></script>
+    <script src="js/calculation.js"></script>
   </body>
 </html>
